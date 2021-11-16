@@ -1,0 +1,12 @@
+.send {
+  cursor: pointer;
+  position: absolute;
+  right: 28px;
+  bottom: 15px;
+  path {
+    transition: all ease 0.3s;
+  }
+  &_active path {
+    fill: var(--primary)
+  }
+}

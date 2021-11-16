@@ -1,0 +1,9 @@
+.chat {
+  &-container {
+    position: relative;
+    height: calc(100vh - var(--headerHeight));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,22 @@
+.keyboard {
+  padding: 16px 75px 16px 28px;
+  width: 100%;
+  border: none;
+  background-color: var(--keyboardBg);
+  color: var(--userText);
+  font-size: 26px;
+  resize: none;
+  max-height: var(--keyboardMaxHeight);
+  outline: none;
+  &-controller {
+    position: relative;
+    display: flex;
+
+  }
+  &::placeholder {
+    color: var(--keyboardUncative);
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  padding: 16px 28px;
+  position: fixed;
+  width: 100%;
+  height: var(--headerHeight);
+  background-color: var(--headerBg);
+  color: var(--headerTitle);
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+
+  &-data {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  &__img {
+    margin-right: 18px;
+    width: 45px;
+    height: 45px;
+  }
+}
