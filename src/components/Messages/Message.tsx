@@ -11,7 +11,9 @@ const Message: FC<IMessage> = ({ author, imageUrl, text, time, userId }) => {
                 !(user.id === userId)
                     ? <div className='message'>
                         {
-                            (author !== 'Anonymous' && author) ? <img className='message-img' src={imageUrl ?? '/user.png' } alt={author}/>
+                            (author !== 'Anonymous' && author) ? <img className='message-img'
+                                                                      src={(imageUrl?.length > 0 && imageUrl !== 'empty' ? imageUrl : '/user.png' )}
+                                                                      alt={author}/>
                             : <img src='/spyware.png' className='message-img' alt='Anonymous' />
                         }
 

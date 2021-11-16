@@ -8,7 +8,7 @@ const Header = () => {
         <div className='header'>
             <div className="header-data">
                 {
-                    (name !== 'Anonymous' && name) ? <img src={`${imageUrl?.length > 0 ? imageUrl : '/user.png'}`} alt="Your Avatar" className="header__img"/>
+                    (name !== 'Anonymous' && name ) ? <img src={`${(imageUrl?.length > 0 && imageUrl !== 'empty') ? imageUrl : '/user.png'}`} alt="Your Avatar" className="header__img"/>
                     : <img src="/spyware.png" alt="Your Avatar" className="header__img"/>
                 }
                 <h2 className="header__title">Hello, {name ?? 'Anonymous'}</h2>
